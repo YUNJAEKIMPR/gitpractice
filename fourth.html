@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zookeeper Form</title>
+    <style>
+        .contact{
+            border: 2px solid gray;
+            width: 500px;
+            padding: 20px;
+        }
+        .personal_info{
+            border: 2px solid gray;
+            width:500px;
+            padding: 20px;
+        }
+        .favorite{
+            border: 2px solid gray;
+            width:500px;
+            padding: 20px;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Zoo Keeper Application Form</h1>
+    <p>Please complete the form, Mandatory fields are marked with a <span style="color :red">*</span></p>
+    <br>
+    <div class="contact">
+        <h3>Contact Details</h3>
+        <table id="contact">
+            <tr>
+                <td><label for="name">Name*</label></td>
+                <td><input type="text"id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Telephone</label></td>
+                <td><input type="text"id="tel" name="tel"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email*</label></td>
+                <td><input type="text"id="email" name="email"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="personal_info">
+        <h3>Personal Information</h3>
+        <table id="personal_info">
+            <tr>
+                <td><label for="age">*Age</label></td>
+                <td><input type="text"id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="reason">when did you first know you wanted to be a zoo-keeper?</label></td>
+                <td><textarea id="reason" name="reason" cols="50" rows="5"></textarea></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="favorite">
+            <h3>Pick Your Favorite Animals</h3>
+            <table id="favorite">
+                <tr>
+                    <td><input type="radio" id="animal" name="zebrea">Zebra</td>
+                    <td><input type="radio" id="animal" name="cat">cat</td>
+                    <td><input type="radio" id="animal" name="Anaconda">Anaconda</td>
+                    <td><input type="radio" id="animal" name="Human">Human</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="animal" name="Elephant">Elephant</td>
+                    <td><input type="radio" id="animal" name="Wildebeest">Wildebeest</td>
+                    <td><input type="radio" id="animal" name="Pigeon">Pigeon</td>
+                    <td><input type="radio" id="animal" name="Crab">Crab</td>
+                </tr>
+            </table>
+    </div>
+    <br>
+    <button>Submit Application</button>
+</body>
+</html>
